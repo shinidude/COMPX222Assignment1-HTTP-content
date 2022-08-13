@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"> 
+        <title>HTTP and HTTPS</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head> 
+    <body id="index-body">   
+        <header>  
+            <div class="label"><label class="logo">HTTP Info <span class="material-symbols-outlined"> local_library</span></label></div> 
+            <div class="links"><a href="index.html">Protocol</a></div> 
+            <div class="links"><a href="webpagedownloaded.html">Webpage<span class="material-symbols-outlined" id="downloading">downloading</span></a></div> 
+            <div class="links"><a href="request.html">Request</a></div> 
+            <div class="links"><a href="getpost.html">Get & Post</a></div>            
+        </header>    
+
+        <h1> WHAT IS HTTP AND HTTPS?</h1>
+        <div class="container-content" id="mainhttp">
+            <div id="protocolOverview" class="subcontainer-httpcontent"> <!--Protocol--> 
+                <h2 class="protocol">Let's explore Protocol first!</h2>
+                <picture"> 
+                    <source media="(max-width: 900px)" srcset="pictures/img-proc-small.png" class="content-img"> <!--small picture-->
+                    <source media="(min-width: 1000px)" srcset="pictures/img-proc-medium.png" class="content-img" > <!--medium/large picture-->
+                    <img src="pictures/img-proc-medium.png" alt="HTTP transaction" class="content-img">
+                </picture>
+
+                   <p id="protocol-p">
+                        A protocol is a set of procedures that allows connection and data exchange between two places of a network.
+                        Protocol is used for the communication between the web-client, a web browser running on a device, and web server as they have to follow the same set of rules to be able to understand each other.
+                        There are different kinds of protocol such as FTP and Websocket, however in this site we will focus on HTTP and HTTPS. 
+                    </p> 
+             </div>
+                <div class="subcontainer-httpcontent"> <!--Protocol--> 
+                <h2 class="protocol">HTTP and HTTPS</h2>
+                   <p>
+                        Hypertext transfer Protocol or HTTP  is an application layer protocol made to exchange data from the web client and its server. 
+                        There are web resource which is hosted by a web server. The web server could includes HTML, PDF, JSON, and etc. When a request of a resource  is made from the web client, the HTTP allows access to the web server where the <span class="req-span">request</span> will be processed. 
+                   </p> 
+                   <picture>
+                        <source media="(max-width: 400px)" srcset="pictures/httpTRANSAC (5).png"  class="content-img">  <!--narrow-->
+                        <source media="(max-width: 900px)" srcset="pictures/httpTRANSAC (4).png"  class="content-img"> <!--medium-->
+                        <source media="(min-width: 1000px)" srcset="pictures/httpTRANSAC (3).png" class="content-img"> <!--wide-->
+                        <img src="pictures/httpTRANSAC (4).png" alt="HTTP transaction"  class="content-img">
+                  </picture>
+
+                   <p>
+                        After the process, the web server responses to the web-client with the resource. When the response is already given, the connection will be closed.
+                        This kind of transaction is recognise as a stateless protocol as the server will not retain any information from the last session. 
+                   </p>
+
+                   <p>
+                        Another version of HTTP called Hypertext Transfer Protocol Secure (HTTPS) is more secure. Because data communication between the web client and the web server is encrypted through an encryption protocol, Transport Layer Security (TLS), which guards against hackers.
+                        To do this, TLS utilises asymmetric public key infrastructure which involves two distinct keys: 
+                   </p> 
+
+                   <ul>
+                        <li>Public key: it is securely accessible to anyone who communucates to the server.</li>
+                        <li>Private key: it is stored in the web server and is controlled by the owner of the website. It is used to decrypt information encrypted by the public key. </li>
+                   </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"> 
+        <title>REQUEST</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head> 
+
+    <body> 
+        
+            <header>  <!--Use div to easily control it using grid-->
+                <div class="label"><a href="acknowledge.html"><label class="logo">HTTP Info <span class="material-symbols-outlined"> local_library</span></label></a></div> 
+                <div class="links"><a href="index.html">Protocol</a></div> 
+                <div class="links"><a href="webpagedownloaded.html">Webpage<span class="material-symbols-outlined" id="downloading">downloading</span></a></div> 
+                <div class="links"><a href="request.html">Request</a></div> 
+                <div class="links"><a href="getpost.html">Get & Post</a></div>            
+            </header>            
+        <h1> WHAT IS A REQUEST?</h1>
+        <div class="container-content">
+            <div class="subcontainer-httpcontent">
+                <p>An HTTP <span class="req-span">request</span> is created by a client which is sent to the server to be able to access the web resources. 
+                 The format of the HTTP request shown bellow:</p>
+                 <ol>
+                     <li><strong>Request line:</strong></li>     
+                     <li><strong>Header fields</strong></li> 
+                     <li><strong>Message Body</strong></li>
+                 </ol>
+
+                 <h2>Request line</h2>
+                 <p>This component is cotnsist of three elements. The first part is the <span id="method">method</span>. It is a verb (e.g. <span id="get-span">GET</span>, PUT,<span id="post-span">POST</span>) or a noun (e.g. HEAD) that informs the server what it as to do with the resource. For example, <span id="post-span">POST</span> is used to create a resource.
+                    The second part of request line is the <span id="path">path</span>. This component recognises the resource on the server. The third element is <span id="HTTPnum"> HTTP version number</span>  which displays the HTTP 
+                    specification. 
+                 </p>
+                 <img src="pictures/requestLine-ex.png" width="250px" height= "20" alt="An example of a request line" class="content-img" id="req-line-img">
+                 <h2>Header Fields</h2>
+                 <p>
+                        The header fields enables the client to provide further information regarding the request and client to the server. 
+                 </p>
+                 <h2>Message Body</h2>
+                 <p>
+                    The message body is also known as the entity body which is the actual content of the message. <span id="post-span">POST</span> method requests has message body containing the data to the server. Whereas for <span id="get-span">GET</span>, <span id="get-span">GET</span> request method does not have a message body as it is only retrieving resource.   
+                 </p>
+
+                 <h2 class="req-h2">Status Error Codes</h2>
+                <picture">
+                    <source media="(max-width: 800px)" srcset="pictures/req-errorcode-img-small" class="content-img"> <!--small picture-->
+                    <source media="(min-width: 801px)" srcset="pictures/req-errorcode-img.png" class="content-img" > <!--medium/large picture-->
+                    <img src="pictures/req-errorcode-img.png" alt="A 404 error code shown" class="content-img">
+                </picture>
+                <p>
+                    If something wrong happens in the server while processing the request, the client will be informed through the display of a HTTP status code as a response. 
+                    Not all status codes signify error in the server. However, we will focus on knowing some common error codes. 
+                 </p> 
+                 <table class="status-code-table">
+                     <thread>
+                         <tr>
+                             <th>Error name</th>
+                             <th>Why</th>
+                         </tr>
+                     </thread>
+ 
+                     <tbody>
+ 
+                         <tr>
+                             <td>301 Permanently Moved</td>
+                             <td>A 301 response shows that a distinct webpage is permanently moved to a different URL</td>
+                         </tr>
+ 
+                         <tr>
+                             <td>401 Unauthorized</td>
+                             <td>The response means that the request is not complied as valid authentication credentials for the resource is insufficient or invalid</td>
+                         </tr>
+ 
+                         <tr>
+                             <td>404 Not Found</td>
+                             <td>This error indicates that page the user is searching for does not exist or cannot be found. This occurence could be caused by entering an incorrect URL or the page has been deleted.</td>
+                         </tr>
+ 
+                         <tr>
+                             <td>410 Gone</td>
+                             <td>
+                                 401 error indicates that the requested resource has been permanently removed from the internet. 
+                             </td>
+                         </tr>
+                         
+                         <tr>
+                             <td>500 Internal Server Error</td>
+                             <td>This error depicts that there is a general issue with the website's server. </td>
+                         </tr>
+                         
+                         <tr> <td>502 Bad Gateway</td>
+                             <td>
+                                 This issue occurs when one server on ther internet gets an invalid response from another server. This error could be fixed by refreshing the browser or clearing
+                                  the browser site.
+                             </td>
+                         </tr> 
+                     </tbody>
+                 </table>
+             </div>
+        </div>
+    </body>
+</html>

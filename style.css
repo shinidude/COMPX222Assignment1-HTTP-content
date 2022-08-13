@@ -1,0 +1,214 @@
+body{
+    background: black;
+    width: 100%; /* to ensure that linear background to not make end lines*/
+    height:100%;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    color: aliceblue;
+    justify-content: center;
+    display: grid;
+ 
+}
+
+
+/*Header area */
+
+header{
+    color: aliceblue;
+    height: 5rem;
+    display: grid; 
+    grid-auto-flow: column;
+    box-shadow: 0 3px 10px black ;
+    margin-right: 8rem;
+}
+
+.links{
+    text-align: center;
+}
+
+label {
+    color:white; 
+    text-decoration: underline;
+    font-family: Calibri, 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 2.0rem;
+    text-shadow: -2px -.5px 1px royalblue,
+                 -2px -.5px 3px rgb(19, 61, 187),
+                 -3px -.5px  5px black,
+                 -4px -.5px  6px black;
+    margin-left: 3rem;
+    border: 2px solid white;
+    padding: .5rem;
+    
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+div, .label{
+    margin-bottom: 1rem;
+}
+
+div, .links{
+    margin-top: 1.5rem;
+
+}
+
+ .links :hover{
+    text-shadow: -3px -.5px 1px royalblue,
+                 -5px -1.5px 5px rgb(19, 61, 187),
+                 -7px -2.5px 5px rgb(7, 34, 114),
+                 -8px -3.5px  6px rgb(71, 38, 38),
+                 -9px -4.5px  6px rgb(37, 36, 36);
+                 
+}
+
+
+
+/*General Content container stuff*/
+h1{
+    text-align: center;
+    margin-left: 4rem;
+    color: aliceblue;
+    font-family: Calibri,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-shadow: -2px -.5px 2px royalblue,
+                 -2px -.5px 4px rgb(19, 61, 187),
+                 -5px -.5px  7px rgb(117, 7, 7),
+                  -7px -.5px  2px rgb(223, 103, 103);
+    text-decoration: underline;               
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+ .container-content{
+    border-radius: 2rem;
+    padding: 2rem;
+    display: block;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: -2px -.5px 1px royalblue,
+                 -2px -.5px 3px rgb(19, 61, 187),
+                 -3px -.5px  5px black,
+                 -4px -.5px  6px black;
+    color: aliceblue;
+    margin-bottom: 0.5rem;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+    color: aliceblue;
+}
+
+.req-span{
+    color: rgb(241, 66, 66);
+    text-shadow: -2p -3px 10px white
+                -3p -4px 10px   rgb(75, 70, 70);
+    font-weight: bolder;
+}
+
+/*The Protocol part*/
+.content-img{
+    display: block;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.subcontainer-httpcontent{
+    box-shadow: 0 4px 30px rgba(120, 41, 41, 0.8);
+    padding:3rem;
+    word-wrap: break-word;
+    background: rgb(255, 255, 255, .05);
+    backdrop-filter: blur(10px);
+    box-shadow: -4px -2px 30px rgba(120, 41, 41, 0.8),
+                -2px -.5px 2px royalblue,
+                -2px -.5px 4px rgb(19, 61, 187),
+                -5px -.5px  7px rgb(117, 7, 7),
+                -7px -.5px  2px rgb(223, 103, 103); 
+  
+}
+
+
+/*For the request part*/
+.status-code-table{
+    border-collapse: collapse;  
+    margin: 25px 0;
+    min-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.status-code-table th{
+  color: red;
+  text-shadow:-2px -.5px 2px rgb(194, 206, 243);
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+
+.status-code-table tbody tr{
+  border-bottom: 2px solid rgb(250, 250, 255);
+  
+}
+
+#method{
+    color: darkorange;
+    font-weight: bolder;
+}
+
+td{
+    padding: 5px 15px;
+    border: 1px solid white;
+}
+
+#path{
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+#HTTPnum{
+    color: deeppink;
+    font-weight: bolder;
+}
+
+/*For the Get and Post part*/
+#get-span{
+    color: cadetblue;
+    font-weight: bolder;
+}
+#post-span{
+    color: rgb(140, 166, 21);
+    font-weight: bolder;
+}
+
+/*webpage download*/
+
+.steps{
+    font-weight: bold;
+    color: aquamarine;
+}
+
+#getandpost-h3{
+    text-align: center;
+}

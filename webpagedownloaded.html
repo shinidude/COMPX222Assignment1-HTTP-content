@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"> 
+        <title>Web page download</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head> 
+
+    <body>          
+        <header>   
+            <div class="label"><a href="acknowledge.html"><label class="logo">HTTP Info <span class="material-symbols-outlined"> local_library</span></label></a></div> 
+            <div class="links"><a href="index.html">Protocol</a></div> 
+            <div class="links"><a href="webpagedownloaded.html">Webpage<span class="material-symbols-outlined" id="downloading">downloading</span></a></div> 
+            <div class="links"><a href="request.html">Request</a></div> 
+            <div class="links"><a href="getpost.html">Get & Post</a></div>            
+        </header>           
+        <h1>HOW IS A WEBPAGE DOWNLOADED?</h1>
+        <div class="container-content" id="mainGandP">
+            <div id="webpage-div" class="subcontainer-httpcontent"> <!--Protocol--> 
+                <h2>DOWNLOADING A WEBPAGE </h2>
+                <h4>
+                    When a user goes into a weg page,  HTTP is utilised to download that page. Let’s follow through the process!
+                </h4>
+                <h3 class="steps">1. DIRECT BROWSER TO URL</h3>
+                    <p>When a URL(Uniform Resource Locator) is typed onto the search bar, ther “http” starting point indicates the browser that HTTP is used to fetch the document for the URL.</p>
+                <h3 class="steps">2. IP SEARCH</h3>
+                    <p>The Domain Name System then receives a message from the browser called a recursive DNS query. This message it sent for the DNS to translate the domain name into Internet Protocol addresses. The DNS server processes the query searching and returns the IP address to the user.</p>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="pictures/DNSserver-small.png"  class="content-img">  <!--narrow-->
+                        <source media="(max-width: 900px)" srcset="pictures/DNSserver-medium.png"  class="content-img"> <!--medium-->
+                        <source media="(min-width: 1000px)" srcset="pictures/DNSserver.png" class="content-img"> <!--wide-->
+                        <img src="pictures/DNSserver-medium.png" alt="A picture of the DNS server" class="content-img">
+                    </picture>
+                <h3 class="steps">3. HTTP REQUEST</h3>                
+                <p>A HTTP request is then delivered  when the browser recognises the IP address of the computer hosting the requested URL. The list of request can be seen in the network tab of the devtools wherea network log exhibits a list of request in a chronological order.</p>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="pictures/network-tab-small.png"  class="content-img">  <!--narrow-->
+                    <source media="(max-width: 900px)" srcset="pictures/network-tab.png"  class="content-img"> <!--medium-->
+                    <source media="(min-width: 1000px)" srcset="pictures/network-tab-wide.png" class="content-img"> <!--wide-->
+                    <img src="pictures/network-tab.png" alt="A picture of the network-tab" class="content-img">
+                </picture>
+                <h3 class="steps">4. HTTP Response</h3>  
+                <p>A HTTP request is then delivered  when the browser recognises the IP address of the computer hosting the requested URL. The list of request can be seen in the network tab of the devtools wherea network log exhibits a list of request in a chronological order.</p>
+                    <div id="webDownload-response">
+                        <p><strong> Status line:</strong> contains the protocol version, status code, and the reason phrase. The status code is a three digit number. The first number in this code defines the type of response the web page is receiving. Here’s a categorisation of the Status Code:</p>
+                        <ul>
+                            <li><strong>1xx Informational:</strong> Indicating the request has been received and the process is continuing.</li>
+                            <li><strong>2xx Success:</strong> The response means that the request is not complied as valid authentication credentials for the resource is insufficient or invalid</li> 
+                            <li><strong>3xx Redirection:</strong> Involves more action to be done to fulfill the request</li>
+                            <li><strong>4xx Client Error:</strong> Either the request has incorrect syntax or cannot be completed</li> 
+                            <li><strong>5xx Server Error:</strong>  The server failed to fully execute the request.</li>
+                       </ul>
+            
+                            <p><strong>Response Header Fields:</strong> this is additional information about the response which helps the browser to render the content. The content type can be seen as “text/javascript”. The content type informs the browser the kind of document it’s delivering back. Other examples of content-types are text/css, image/jpeg, text/html, and  application/binary. 
+                                The content-length indicates how many bytes are in the document for the browser to know how long the downloading process will be. When this process is finished, a HTTP response writes the document requested.
+                                When the browser has all the information needed, the document renders the requested content.                                
+                            </p>
+
+                            <picture>
+                                <source media="(max-width: 400px)" srcset="pictures/headerField-ex--small.png"  class="content-img">  <!--narrow-->
+                                <source media="(max-width: 900px)" srcset="pictures/headerField-ex.png"  class="content-img"> <!--medium-->
+                                <source media="(min-width: 1000px)" srcset="pictures/network-tab-wide.png" class="content-img"> <!--wide-->
+                                <img src="pictures/headerField-ex.png" alt="A picture of the headerField" class="content-img">
+                            </picture>
+                    </div>  
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

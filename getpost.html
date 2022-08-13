@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8"> 
+        <title>Get and Post</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    </head> 
+
+    <body> 
+        <header>   
+            <div class="label"><a href="acknowledge.html"><label class="logo">HTTP Info <span class="material-symbols-outlined"> local_library</span></label></a></div> 
+            <div class="links"><a href="index.html">Protocol</a></div> 
+            <div class="links"><a href="webpagedownloaded.html">Webpage<span class="material-symbols-outlined" id="downloading">downloading</span></a></div> 
+            <div class="links"><a href="request.html">Request</a></div> 
+            <div class="links"><a href="getpost.html">Get & Post</a></div>            
+        </header>
+        <h1>HTTP REQUEST TYPES</h1>
+        <div class="container-content" id="mainGandP">
+            <div id="Get-and-Post-intro" class="subcontainer-httpcontent"> <!--Get and post--> 
+                <h2 id="GandP-h2">GET and POST</h2>
+                <p>There are a list of HTTP <span class="req-span">request</span> method which describes what action is needed to be done to the requested resource. There are two main HTTP request methods: <span id="get-span">GET</span> and <span id="post-span">POST</span>.</p>
+                <p>
+                    
+                    <span id="get-span">GET</span> is implemented to request for a resource (e.g. hypertext document and images). This method only employed for retrieving data and it does not alter any resourcein the server. Get should not get involved in any sensitive (e.g. password, financial information, security number) information. This information may become visible in the URL and also can become a cache data. 
+                    <span id="post-span">POST</span>, on the other hand, is utilised to send information to the web server to modify a resource. <span id="post-span">POST</span> is more secure than <span id="get-span">GET</span> as the query parameters are not displayed on the URL and would less likely be cache. Here are some examples of GET and POST</p>
+                    <picture>
+                        <source media="(max-width: 400px)" srcset="pictures/GetandPost example-small.png"  class="content-img">  <!--narrow-->
+                        <source media="(max-width: 900px)" srcset="pictures/GetandPost example.png"  class="content-img"> <!--medium-->
+                        <source media="(min-width: 1000px)" srcset="pictures/GetandPost example-wide.png" class="content-img"> <!--wide-->
+                        <img src="pictures/GetandPost example.png" alt="Examples of get and post"  class="content-img"> 
+                    </picture>
+
+            </div>
+
+            <div class="subcontainer-httpcontent" id="get-and-post-dif">
+                <h3 id="getandpost-h3">The difference between <span id="post-span">POST</span> and <span id="get-span">GET</span> does not stop here as shown in table of distinction below:</h3>
+                        <!--Table for the status code-->
+                        <table class="status-code-table">
+                            <thread>
+                                <tr>
+                                    <th>Difference</th>
+                                    <th>GET</th>
+                                    <th>POST</th>
+                                </tr>
+                            </thread>
+        
+                            <tbody>
+        
+                                <tr>
+                                    <td>Bookmarked</td>
+                                    <td>Can be bookmarked </td>
+                                    <td>Cannot be bookmarked </td>
+                                </tr>
+        
+                                <tr>
+                                    <td>Parameters</td>
+                                    <td>Stays in the browser history</td>
+                                    <td>Not save in the browser history</td>
+                                </tr>
+        
+                                <tr>
+                                    <td>Data Length</td>
+                                    <td>Restricted to 2048 characters</td>
+                                    <td>Unlimited </td>
+                                </tr>
+        
+                                <tr>
+                                    <td>Data Type</td>
+                                    <td>Only ASCII characters</td>
+                                    <td>No restrictions </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Request body</td>
+                                    <td>has a request body</td>
+                                    <td>Does not have a request body</td>
+                                </tr>
+                            </tbody>
+                        </table>
+             </div>
+        </div>
+    </body>
+</html>
